@@ -15,4 +15,8 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'cucumber-rails'
   gem 'factory_girl'
+  gem 'guard-rspec'
+  gem 'guard-rails'
+  gem 'guard-cucumber'
+  gem 'database_cleaner'
 end
