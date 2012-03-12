@@ -1,3 +1,8 @@
 Lyrics::Application.routes.draw do
-  root :to => "home#index"
+  resources :lyrics do
+    collection do
+      get "search"
+    end
+  end
+  root :to => "lyrics#index"
 end
