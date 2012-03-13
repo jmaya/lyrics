@@ -10,7 +10,6 @@ end
 When /^I press the "([^"]*)" button$/ do |arg1|
   click_button(arg1)
 end
-
-Then /^I should see "([^"]*)"$/ do |arg1|
-  find(:xpath, "//li[contains(text(),'#{arg1}')]").should_not(be_nil, "Could not find the text '#{arg1}' within the selector 'li'")
+Then /^I should see "([^"]*)" within "([^"]*)"$/ do |arg1, arg2|
+  find(:xpath, "//#{arg2}[contains(text(),'#{arg1}')]").should_not(be_nil, "Could not find the text '#{arg1}' within the selector '#{arg2}'")
 end

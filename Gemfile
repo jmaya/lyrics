@@ -11,9 +11,9 @@ gem "haml", ">= 3.1.4"
 gem "haml-rails", ">= 0.3.4", :group => :development
 gem "bootstrap-sass", ">= 2.0.1"
 
+gem 'cucumber-rails', :group => :test
 group :development, :test do
   gem 'rspec-rails'
-  gem 'cucumber-rails'
   gem 'factory_girl'
   gem 'guard-rspec'
   gem 'guard-rails'

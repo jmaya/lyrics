@@ -15,7 +15,7 @@ module ElVallenato
       @s.body.size.should == 1339
     end
 
-    it "has a singer" do
+    xit "has a singer" do
       @s.singer.should == "Jorge"
     end
   end
