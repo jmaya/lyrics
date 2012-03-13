@@ -3,4 +3,4 @@ Feature: Searching for lyrics
     Given I am in a home page
     When I search for "Nació Mi Poesia"
     And I press the "Search" button
-    Then I should see "como Las Madrugadas De Mi Pueblo"
+    Then I should see "Naci"

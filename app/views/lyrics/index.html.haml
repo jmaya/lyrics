@@ -1,3 +1,12 @@
 =form_tag("/lyrics/search", :method => "get") do |f|
   =text_field_tag "q"
   =submit_tag "Search"
+
+
+%ul
+-@songs.each do |song|
+  %li
+    = song.title
+
+
+
